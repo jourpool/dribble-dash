@@ -15,3 +15,23 @@ add this on index.html inside <script> tag:
 		function back() {
 			Android.back();
 		}
+
+
+function resume() { 
+			$(document).ready(function () {
+				c2_callFunction("resume"); 
+			});
+		}
+
+		function initData(reward) { 
+			if (c2_callFunction)
+			c2_callFunction("initData", reward);
+		}
+
+		function back() {
+			Android.back();
+		}
+
+		function gameInit() {
+			Android.gameInit();
+		}
