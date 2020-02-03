@@ -6,7 +6,7 @@
 	<title>Dribble Dash</title>
 	
 	<link rel="manifest" href="appmanifest.json" />
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -63,6 +63,7 @@
 	</div>
 	
 	<script src="jquery-3.4.1.min.js"></script>
+
 	<script src="c2runtime.js"></script>
 
     <script>
@@ -70,7 +71,7 @@
 		{			
 			cr_createRuntime("c2canvas");
 		});
-
+		
 		function onVisibilityChanged() {
 			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
 				cr_setSuspended(true);
@@ -91,7 +92,7 @@
 		window.C2_RegisterSW = function C2_RegisterSW()
 		{
 			if (!navigator.serviceWorker)
-				return;		// no SW support, ignore call
+				return;		
 			
 			try {
 				navigator.serviceWorker.register("sw.js", { scope: "./" })

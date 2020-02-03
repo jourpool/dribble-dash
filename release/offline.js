@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1580698916,
+	"version": 1580701057,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -12,6 +12,7 @@
 		"images/topbar-sheet0.png",
 		"images/platform_base-sheet0.png",
 		"images/enemy-sheet0.png",
+		"images/collision-sheet0.png",
 		"images/gameover-sheet0.png",
 		"images/finish-sheet0.png",
 		"images/background-sheet0.png",
@@ -23,10 +24,6 @@
 		"media/coin.ogg",
 		"media/death.ogg",
 		"icon-32.png",
-		"loading-logo.png",
-		"icon-16.png",
-		"icon-114.png",
-		"icon-128.png",
-		"icon-256.png"
+		"loading-logo.png"
 	]
 }
