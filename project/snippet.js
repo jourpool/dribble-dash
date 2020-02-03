@@ -1,5 +1,6 @@
 add this on index.html inside <script> tag:
 
+		var item;
 
 		function resume() { 
 			$(document).ready(function () {
@@ -8,7 +9,7 @@ add this on index.html inside <script> tag:
 		}
 
 		function initData(reward) { 
-			var item = JSON.parse(reward);
+			item = JSON.parse(reward);
 			if(item.length > 1) {
 				if (c2_callFunction)
 				c2_callFunction("initData", [item[0]["amount"],item[1]["amount"]]);
@@ -26,6 +27,11 @@ add this on index.html inside <script> tag:
 			Android.gameInit();
 		}
 
-		function claimReward(score, rewards) {
-			Android.claimReward(score, rewards)
+		function claimReward(score, bonus) {
+			item[0]["amount"] = score;
+
+			if(item.length > 1)
+			item[1]["amount"] = bonus;
+
+			Android.claimReward(score, JSON.stringify(item))
 		}
